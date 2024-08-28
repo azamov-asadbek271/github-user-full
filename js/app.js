@@ -45,6 +45,8 @@ btn.addEventListener("click",(e) => {
        userName.innerHTML = login
        userDec.innerHTML = bio === "" || bio === null ? "This profile has no bio" : bio
        userFollowiers.innerHTML = followers
+         error.classList.toggle("hidden");
+       input.value = ""
       //  userFollowing.innerHTML = following
       //  userRepos.innerHTML = public_repos
       //  userlocation.innerHTML = location === "" || location === null ? "No Location" : location
