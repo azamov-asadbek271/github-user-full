@@ -1,0 +1,202 @@
+@import url(https://fonts.googleapis.com/css2?family=Space+Mono:wght@100;200;300;400;500;600;700&display=swap);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+h1 {
+  font-size: 26px;
+  line-height: 38px;
+  font-weight: 700;
+}
+h2 {
+  font-size: 22px;
+  line-height: 33px;
+  font-weight: 700;
+}
+h3 {
+  font-size: 16px;
+  line-height: 23px;
+}
+h4 {
+  font-size: 13px;
+  line-height: 20px;
+}
+
+body {
+  font-family: 'Space Mono', monospace;
+  max-height: 100vh;
+  background-color: #F6F8FF;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.main {
+  width: 100%;
+  max-width: 770px;
+  padding: 10px 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.dark_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 36px;
+  padding: 9px 0;
+}
+.dark_p {
+  color: #697C9A;
+  font-weight: 700;
+  line-height: 19px;
+}
+.dark-moon {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+  padding: 9px 10px 9px 32px;
+  background-color: #ffff;
+  border-radius: 15px;
+  margin-bottom: 24px;
+}
+.search-img {
+  width: 24px;
+  height: 24px;
+}
+.input {
+  margin-right: auto;
+  width: 50%;
+  padding: 10px;
+  font-size: 18px;
+  line-height: 25px;
+  color: #222731;
+  font-family: 'Space Mono';
+  border:none;
+  outline: none;
+}
+.no-resualt {
+  color: red;
+}
+.btn-search {
+  padding: 13px 24px;
+  border-radius: 10px;
+  background-color: #60ABFF;
+  color: #ffff;
+  border: none;
+  cursor: pointer;
+}
+.btn-search:hover {
+  background-color: #60aaffb0;
+}
+.user {
+  background-color: #ffff;
+  padding: 48px;
+  border-radius: 15px;
+  display: flex;
+  gap: 37px;
+}
+.user_img_box {
+}
+.user_image {
+  border-radius:50%;
+}
+.user_desc {
+  
+}
+.user_top {
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  margin-bottom: 3px;
+}
+.user_title {
+  color:#2B3442;
+}
+.user_username {
+ color: #0079FF;
+ font-weight: 400;
+ margin-bottom: 20px;
+}
+.user_date {
+   color:#697C9A;
+}
+.user_description {
+  color:#4B6A9B;
+  min-height: 50px;
+
+}
+.follow_box {
+  margin-top: 32px;
+  background-color:#F6F8FF;
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+  padding: 15px 32px;
+  margin-bottom: 32px;
+}
+.repob_box_title {
+  color: #4B6A9B;
+}
+.repos_box {
+
+}
+.Followers_box {
+}
+.Following_box {
+}
+.user-bottom {
+  display: grid;
+  grid-template-columns: repeat(2,2fr);
+  gap: 20px;
+}
+.location_box {
+  display: flex;
+  gap: 10px;
+}
+.twitter_box {
+  display: flex;
+  gap: 10px;
+}
+.url_box {
+  display: flex;
+  gap: 10px;
+}
+.github_box {
+  display: flex;
+  gap: 10px;
+}
+.hidden {
+  display: none;
+}
+.git {
+  color: #222731;
+}
+
+@media (max-width: 768px) {
+  .user {
+    flex-direction: column;
+  }
+  .user-bottom {
+    display: flex;
+    flex-direction: column;
+  }
+  .user_top {
+    flex-direction: column;
+  }
+  .user_username {
+    text-align: center;
+  }
+  .user_img_box {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+  }
+  
+}
