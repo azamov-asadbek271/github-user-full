@@ -45,17 +45,17 @@ btn.addEventListener("click",(e) => {
        userName.innerHTML = login
        userDec.innerHTML = bio === "" || bio === null ? "This profile has no bio" : bio
        userFollowiers.innerHTML = followers
-         error.classList.toggle("hidden");
+         error.classList.add("hidden");
        input.value = ""
-      //  userFollowing.innerHTML = following
-      //  userRepos.innerHTML = public_repos
-      //  userlocation.innerHTML = location === "" || location === null ? "No Location" : location
-      //  twitter.innerHTML = twitter_username === "" || twitter_username === null ? "No Twitter" : twitter_username
-      //  github.innerHTML = url === "" || url === null ? "No Location" : url;
-      //  git.innerHTML = html_url === "" || html_url === null ? "No Location" : html_url;
+       userFollowing.innerHTML = following
+       userRepos.innerHTML = public_repos
+       userlocation.innerHTML = location === "" || location === null ? "No Location" : location
+       twitter.innerHTML = twitter_username === "" || twitter_username === null ? "No Twitter" : twitter_username
+       github.innerHTML = url === "" || url === null ? "No Location" : url;
+       git.innerHTML = html_url === "" || html_url === null ? "No Location" : html_url;
 
    } else {
-         error.classList.toggle("hidden")
+         error.classList.remove("hidden")
    }
  }
  getUrl()
